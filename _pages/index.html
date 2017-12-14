@@ -1,0 +1,15 @@
+---
+layout: base
+permalink: index.html
+test: this is a test
+---
+
+<p>Hello world {{ site.description }} {{ page.test }}</p>
+ 
+{% for item in site.posts %}
+    {% if forloop.first %}<ul>{% endif %}
+        <li>
+            <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+        </li>
+    {% if forloop.last %}</ul>{% endif %}
+{% endfor %}

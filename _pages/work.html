@@ -1,0 +1,22 @@
+---
+layout: base
+permalink: works/index.html
+title: Works
+---
+
+<h1>Works archive</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perferendis, odit vel minima, rerum autem labore inventore laborum explicabo provident tenetur ad. Hic, eum incidunt. Nemo modi nobis mollitia repellat!</p>
+
+{% assign allWorks = site.work | sort:'workYear' | group_by: 'workYear' %}
+{% for year in allWorks %}
+    <h2>{{year.name}}</h2>
+
+    {% for item in year.items %}
+        {% if forloop.first %}<ul>{% endif %}
+            <li>
+                <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+                <p>{{ item.summary }}</p>
+            </li>
+        {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+{% endfor %}

@@ -1,0 +1,11 @@
+- navLabel: Home
+  navLink: /index.html
+
+- navLabel: Blog
+  navLink: /blog/index.html
+
+- navLabel: Work
+  navLink: /works/index.html
+
+- navLabel: Contact
+  navLink: /contact/index.html

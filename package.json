@@ -1,0 +1,27 @@
+{
+  "name": "jekyll-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "browser-sync": "^2.18.13",
+    "cross-spawn": "^5.1.0",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-image-resize": "^0.13.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "merge2": "^1.2.0"
+  },
+  "browserList": [
+    "last 2 versions"
+  ]
+}
